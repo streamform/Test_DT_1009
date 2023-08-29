@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      bootctrl.mt6771
 
-PRODUCT_USE_DYNAMIC_PARTATIONS := true
+# PRODUCT_USE_DYNAMIC_PARTATIONS := true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 ENABLE_VIRTUAL_AB := true
