@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
      bootctrl.mt6771
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-     bootctrl.mt6771 \
+     # bootctrl.mt6771 \
      libgptutils \
      libz \
      libcutils
