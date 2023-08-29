@@ -15,7 +15,7 @@ AB_OTA_PARTITIONS += \
     product \
     vendor \
 BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
+# TARGET_NO_RECOVERY := true
 
 # 架构申明
 TARGET_ARCH := arm64
