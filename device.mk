@@ -29,10 +29,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      bootctrl.mt6771
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-     libgptutils \
-     libz \
-     libcutils
+PRODUCT_USE_DYNAMIC_PARTATIONS := true
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+ENABLE_VIRTUAL_AB := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 PRODUCT_PACKAGES += \
      otapreopt_script \
